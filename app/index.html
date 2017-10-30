@@ -11,12 +11,18 @@
     <link rel="stylesheet" href="app.css">
     <!--angular-->
     <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
     <!--component-->
     <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
     <script src="./components/phone-list/phone-list.module.js"></script>
     <script src="./components/phone-list/phone-list.component.js"></script>
+    <script src="./components/phone-detail/phone-detail.module.js"></script>
+    <script src="./components/phone-detail/phone-detail.component.js"></script>
+
 </head>
 <body>
-<phone-list></phone-list>
+<div ng-view></div>
+<!--<phone-list></phone-list>-->
 </body>
 </html>
